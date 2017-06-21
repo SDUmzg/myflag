@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\16661\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="F:\AndroidStudioProjects\myflag\app\build\intermediates\transforms\dex\debug\folders\1000\10\library-2.4.0_d5bbc41070c40bede41669ad4dcb025d3a37ba9a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\AndroidStudioProjects\myflag\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="F:\AndroidStudioProjects\myflag\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.4.0_393adf12d38e13b04b194d4097cd28c789c69912\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\AndroidStudioProjects\myflag\app\build\intermediates\exploded-aar\pl.droidsonroids.gif\android-gif-drawable\1.1.17\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="7f8c6fd043a9c060badf3fa9b77e51c422af0a8b">
+        <dex dex="F:\AndroidStudioProjects\myflag\app\build\intermediates\transforms\dex\debug\folders\1000\10\pl.droidsonroids.gif-android-gif-drawable-1.1.17_879302cb06a3637b2d13d7eee18302728939b613\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\AndroidStudioProjects\myflag\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="F:\AndroidStudioProjects\myflag\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.4.0_a93b5b144109bf50154ca94a21f2ae5012753bbc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\AndroidStudioProjects\myflag\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="F:\AndroidStudioProjects\myflag\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.4.0_a22ea36d241290141a0937a5cbf66a7ef7834576\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\AndroidStudioProjects\myflag\app\build\intermediates\exploded-aar\com.android.support\gridlayout-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="003ebdacd5f75067b8724f92bd5eefa323d870aa">
+        <dex dex="F:\AndroidStudioProjects\myflag\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-gridlayout-v7-23.3.0_3ca61dd1175bf6ff3a40bbb6aa3615374bcb1393\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="H:\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.0-alpha7\constraint-layout-solver-1.0.0-alpha7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="439eeb5ffd54cbd18db0a6aea471e8356f19fc36">
+        <dex dex="F:\AndroidStudioProjects\myflag\app\build\intermediates\transforms\dex\debug\folders\1000\10\constraint-layout-solver-1.0.0-alpha7_9d93a8c322ed2706806c98016250c555faf78786\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\16661\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\logging-interceptor\3.2.0\a56f28d5b7fab623c6c1d2afa08dd496d873ac21\logging-interceptor-3.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="a56f28d5b7fab623c6c1d2afa08dd496d873ac21">
+        <dex dex="F:\AndroidStudioProjects\myflag\app\build\intermediates\transforms\dex\debug\folders\1000\10\logging-interceptor-3.2.0_a981795da8fb1f68b4973d3f48b7da12cfbd4048\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\AndroidStudioProjects\myflag\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="F:\AndroidStudioProjects\myflag\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.4.0_5e7bc83092bbb8931a7aaec60f3467dffd89469e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\16661\.gradle\caches\modules-2\files-2.1\de.greenrobot\androidsvg\1.2.2-beta-1-tweaked-2\8f38bd2ecc13b4950bfa2aea1b813dd1c6b507b2\androidsvg-1.2.2-beta-1-tweaked-2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8f38bd2ecc13b4950bfa2aea1b813dd1c6b507b2">
+        <dex dex="F:\AndroidStudioProjects\myflag\app\build\intermediates\transforms\dex\debug\folders\1000\10\androidsvg-1.2.2-beta-1-tweaked-2_27b78d27b6915dc303e5bf2e7163fc5aa8452b19\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\16661\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.6.0\98476622f10715998eacf9240d6b479f12c66143\okio-1.6.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="F:\AndroidStudioProjects\myflag\app\build\intermediates\transforms\dex\debug\folders\1000\10\okio-1.6.0_0cfddf3543c00e9d684f115767f9785429286d4b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\AndroidStudioProjects\myflag\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="fe563c7babfa024ec1c16aa63460fda89c836cc5">
+        <dex dex="F:\AndroidStudioProjects\myflag\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_76be06ec7d1c604c4914d609d4fc922903a4b816\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="H:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="F:\AndroidStudioProjects\myflag\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.4.0_b7f846488387ba91cc257b5cc53209f04902da42\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\AndroidStudioProjects\myflag\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="F:\AndroidStudioProjects\myflag\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.4.0_4c4fc749680f9a7ffa01cb241abe6ec8382d4daf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="H:\Android\sdk\build-tools\23.0.3\renderscript\lib\renderscript-v8.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="5b79706a834fa62fc97734d9e799e98b63536ff8">
+        <dex dex="F:\AndroidStudioProjects\myflag\app\build\intermediates\transforms\dex\debug\folders\1000\10\renderscript-v8_9b294c2d1f6936e69f0a3a67bd71290a34172905\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\AndroidStudioProjects\myflag\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="F:\AndroidStudioProjects\myflag\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.4.0_a72d5bd9653152ae64c6a034674f1849b2f376fe\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\16661\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.2.0\f7873a2ebde246a45c2a8d6f3247108b4c88a879\okhttp-3.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="f7873a2ebde246a45c2a8d6f3247108b4c88a879">
+        <dex dex="F:\AndroidStudioProjects\myflag\app\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-3.2.0_6b0649c1fb0c741c8b49bf92ee5cb2866d33e4d8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\AndroidStudioProjects\myflag\app\build\intermediates\exploded-aar\com.android.support.constraint\constraint-layout\1.0.0-alpha7\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="541a2ad68dc68aa49795821f8280b7624e6a0c9b">
+        <dex dex="F:\AndroidStudioProjects\myflag\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support.constraint-constraint-layout-1.0.0-alpha7_e1b605b03e4dd3af6dfe262f320b7b36f99207b5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\AndroidStudioProjects\myflag\app\build\intermediates\exploded-aar\com.github.rahatarmanahmed\circularprogressview\2.5.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="83546b0a7a55c89fcaa55ff282812a4e052e81fe">
+        <dex dex="F:\AndroidStudioProjects\myflag\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.rahatarmanahmed-circularprogressview-2.5.0_de7994ca44818ac937df0488746aa5e315f6e460\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\AndroidStudioProjects\myflag\app\build\intermediates\exploded-aar\com.android.support\design\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="F:\AndroidStudioProjects\myflag\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.4.0_2c153e7b114e3928502cd69b2fda639ce67b670c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\AndroidStudioProjects\myflag\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="e64362ed65e4e4a89253a55b97c4410ae0ac7b44">
+        <dex dex="F:\AndroidStudioProjects\myflag\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_7b153a29b196f7d8914a3eeb5b6e2d581051f383\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\AndroidStudioProjects\myflag\app\build\intermediates\exploded-aar\tk.zielony\carbon\0.13.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="bd6449b5a2518f915391c5cb061403fb5b1e784e">
+        <dex dex="F:\AndroidStudioProjects\myflag\app\build\intermediates\transforms\dex\debug\folders\1000\10\tk.zielony-carbon-0.13.0_4bc0e91382d160a7d2582af9126ef6a50496b353\classes.dex" />
+    </item>
+
+</items>
