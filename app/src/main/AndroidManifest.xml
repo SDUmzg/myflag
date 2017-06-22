@@ -45,6 +45,7 @@
         <activity android:name=".activity.ApplySuperviseDetailActivity" />
         <activity android:name=".activity.MyMessageApplySuperviseActivity" />
         <activity android:name=".activity.EditHeadIconActivity" />
+        <activity android:name=".activity.MyFlagDetailActivity" />
     </application>
 
 </manifest>
