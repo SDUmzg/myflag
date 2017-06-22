@@ -122,7 +122,7 @@ public class MainActivity extends BaseActivity {
 
     private void setMainTabSelected() {
         main_img.setImageDrawable(getResources().getDrawable(R.drawable.main_page_selected));
-        main_tv.setTextColor(getResources().getColor(R.color.tab_text_color_blue));
+        main_tv.setTextColor(getResources().getColor(R.color.tab_text_color_navigation));
 
         community_img.setImageDrawable(getResources().getDrawable(R.drawable.community_default));
         community_tv.setTextColor(getResources().getColor(R.color.tab_text_color_gray));
@@ -139,7 +139,7 @@ public class MainActivity extends BaseActivity {
         main_tv.setTextColor(getResources().getColor(R.color.tab_text_color_gray));
 
         community_img.setImageDrawable(getResources().getDrawable(R.drawable.community_selected));
-        community_tv.setTextColor(getResources().getColor(R.color.tab_text_color_blue));
+        community_tv.setTextColor(getResources().getColor(R.color.tab_text_color_navigation));
 
         friend_img.setImageDrawable(getResources().getDrawable(R.drawable.friend_default));
         friend_tv.setTextColor(getResources().getColor(R.color.tab_text_color_gray));
@@ -156,7 +156,7 @@ public class MainActivity extends BaseActivity {
         community_tv.setTextColor(getResources().getColor(R.color.tab_text_color_gray));
 
         friend_img.setImageDrawable(getResources().getDrawable(R.drawable.friend_selected));
-        friend_tv.setTextColor(getResources().getColor(R.color.tab_text_color_blue));
+        friend_tv.setTextColor(getResources().getColor(R.color.tab_text_color_navigation));
 
         myself_img.setImageDrawable(getResources().getDrawable(R.drawable.myself_default));
         myself_tv.setTextColor(getResources().getColor(R.color.tab_text_color_gray));
@@ -173,7 +173,7 @@ public class MainActivity extends BaseActivity {
         friend_tv.setTextColor(getResources().getColor(R.color.tab_text_color_gray));
 
         myself_img.setImageDrawable(getResources().getDrawable(R.drawable.myself_selected));
-        myself_tv.setTextColor(getResources().getColor(R.color.tab_text_color_blue));
+        myself_tv.setTextColor(getResources().getColor(R.color.tab_text_color_navigation));
     }
 
     public void onMainTabClick(View view) {

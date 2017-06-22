@@ -34,9 +34,7 @@ import java.io.UnsupportedEncodingException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-/**
- * Created by wn on 2015/8/13.
- */
+
 public class BaseTools {
 
     public static final long ONE_DAY_TIME = 24 * 60 * 60;

@@ -70,7 +70,7 @@
                 android:layout_marginTop="4dp"
                 android:text="首页"
                 android:textColor="@color/tab_text_color_gray"
-                android:textSize="14sp" />
+                android:textSize="12sp" />
         </carbon.widget.LinearLayout>
 
         <carbon.widget.LinearLayout
@@ -94,7 +94,7 @@
                 android:layout_marginTop="4dp"
                 android:text="社区"
                 android:textColor="@color/tab_text_color_gray"
-                android:textSize="14sp" />
+                android:textSize="12sp" />
         </carbon.widget.LinearLayout>
 
         <carbon.widget.LinearLayout
@@ -118,7 +118,7 @@
                 android:layout_marginTop="4dp"
                 android:text="好友"
                 android:textColor="@color/tab_text_color_gray"
-                android:textSize="14sp" />
+                android:textSize="12sp" />
         </carbon.widget.LinearLayout>
 
         <carbon.widget.LinearLayout
@@ -142,7 +142,7 @@
                 android:layout_marginTop="4dp"
                 android:text="我"
                 android:textColor="@color/tab_text_color_gray"
-                android:textSize="14sp" />
+                android:textSize="12sp" />
         </carbon.widget.LinearLayout>
     </carbon.widget.LinearLayout>
 

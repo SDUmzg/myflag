@@ -1,13 +1,6 @@
 package com.example.sdu.myflag.menupath;
 
-/**
- * Default provider for degrees between satellites. For number of satellites up to 3
- * tries to keep satellites centered in the given total degrees. For number equal and
- * bigger than four, distirbutes evenly using min and max degrees. 
- *  
- * @author Siyamed SINIR
- *
- */
+
 public class DefaultDegreeProvider implements IDegreeProvider {
 	public float[] getDegrees(int count, float totalDegrees){
 		if(count < 1)

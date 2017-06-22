@@ -8,9 +8,7 @@ import android.util.Log;
 
 import com.example.sdu.myflag.R;
 
-/**
- * Created by Administrator on 2016/8/25.
- */
+
 public class BaseApplication extends Application {
 
     private static BaseApplication instance;

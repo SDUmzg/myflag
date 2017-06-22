@@ -1,7 +1,6 @@
 package com.example.sdu.myflag.adapter;
 
 import android.content.Context;
-import android.graphics.LightingColorFilter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;

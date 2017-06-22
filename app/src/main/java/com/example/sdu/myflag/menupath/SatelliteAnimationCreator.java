@@ -9,12 +9,7 @@ import android.view.animation.RotateAnimation;
 import android.view.animation.TranslateAnimation;
 import com.example.sdu.myflag.R;
 
-/**
- * Factory class for creating satellite in/out animations
- * 
- * @author Siyamed SINIR
- *
- */
+
 public class SatelliteAnimationCreator {
     
     public static Animation createItemInAnimation(Context context, int index, long expandDuration, int x, int y){        

@@ -7,9 +7,7 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.LinearLayout;
 
-/**
- * Created by John on 2014/10/15.
- */
+
 class Solid extends View {
 
     private Paint aboveWavePaint;

@@ -11,9 +11,7 @@ import android.widget.LinearLayout;
 
 import com.example.sdu.myflag.R;
 
-/**
- * Created by John on 2014/10/15.
- */
+
 public class WaveView extends LinearLayout {
     protected static final int LARGE = 1;
     protected static final int MIDDLE = 2;

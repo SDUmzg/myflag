@@ -16,7 +16,7 @@ import com.example.sdu.myflag.base.BaseApplication;
 import com.example.sdu.myflag.bean.FlagBean;
 
 import java.util.ArrayList;
-import java.util.List;
+
 
 public class FlagFriendListAdapter extends BaseAdapter {
 
