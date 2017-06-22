@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -14,7 +13,6 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.Button;
-import android.widget.ImageSwitcher;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
@@ -24,7 +22,7 @@ import android.widget.Toast;
 
 import com.example.sdu.myflag.R;
 import com.example.sdu.myflag.activity.MainActivity;
-import com.example.sdu.myflag.activity.SuperViseDetailActivity;
+import com.example.sdu.myflag.activity.MyFlagDetailActivity;
 import com.example.sdu.myflag.adapter.FlagListAdapter;
 import com.example.sdu.myflag.base.BaseApplication;
 import com.example.sdu.myflag.base.BaseFragment;
@@ -102,7 +100,7 @@ public class MainFragment extends BaseFragment {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                    Intent intent = new Intent(MainFragment.this.getActivity(), SuperViseDetailActivity.class);
+                    Intent intent = new Intent(MainFragment.this.getActivity(), MyFlagDetailActivity.class);
                     intent.putExtra("bean", list.get(position));
                     intent.putExtra("code", 3);
                     MainFragment.this.getActivity().startActivity(intent);
