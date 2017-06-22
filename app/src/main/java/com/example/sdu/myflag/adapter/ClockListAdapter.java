@@ -10,6 +10,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.android.volley.toolbox.ImageLoader;
 import com.example.sdu.myflag.R;
 import com.example.sdu.myflag.base.BaseApplication;
 import com.example.sdu.myflag.bean.ClockBean;
@@ -17,6 +18,7 @@ import com.example.sdu.myflag.bean.SuperViseBriefBean;
 import com.example.sdu.myflag.util.BaseTools;
 import com.example.sdu.myflag.util.NetUtil;
 import com.loopj.android.http.AsyncHttpClient;
+import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.BinaryHttpResponseHandler;
 
 import java.util.ArrayList;
@@ -59,45 +61,15 @@ public class ClockListAdapter extends BaseAdapter {
         TextView contentTv = (TextView) convertView.findViewById(R.id.clock_content);
         TextView timeTv = (TextView) convertView.findViewById(R.id.clock_time);
         ImageView icon = (ImageView) convertView.findViewById(R.id.clock_icon);
-        final ImageView picture = (ImageView) convertView.findViewById(R.id.clock_picture);
+        ImageView picture = (ImageView) convertView.findViewById(R.id.clock_picture);
 
         icon.setImageDrawable(context.getResources().getDrawable(BaseApplication.HeadIcon[clockList.get(position).iconId]));
-        picture.setImageBitmap(getImage(clockList.get(position).photo));
-/*        AsyncHttpClient client = new AsyncHttpClient();
-        client.get(NetUtil.getImageUrl + clockList.get(position).photo, new BinaryHttpResponseHandler() {
+        BaseTools.loadBitmap(NetUtil.getImageUrl + clockList.get(position).photo, picture);
+        //picture.setImageBitmap(getImage(clockList.get(position).photo));
 
-            @Override
-            public void onSuccess(int statusCode, Header[] headers, byte[] binaryData) {
-                b = BitmapFactory.decodeByteArray(binaryData, 0, binaryData.length);
-                picture.setImageBitmap(b);
-                ClockListAdapter.this.notifyDataSetChanged();
-            }
-
-            @Override
-            public void onFailure(int statusCode, Header[] headers,
-                                  byte[] binaryData, Throwable error) {
-            }
-        });*/
         nicknameTv.setText(clockList.get(position).nickname);
         contentTv.setText(clockList.get(position).content);
         timeTv.setText(clockList.get(position).time);
         return convertView;
-    }
-
-    private Bitmap getImage(String photo) {
-        AsyncHttpClient client = new AsyncHttpClient();
-        client.get(NetUtil.getImageUrl + photo, new BinaryHttpResponseHandler() {
-
-            @Override
-            public void onSuccess(int statusCode, Header[] headers, byte[] binaryData) {
-                b = BitmapFactory.decodeByteArray(binaryData, 0, binaryData.length);
-            }
-
-            @Override
-            public void onFailure(int statusCode, Header[] headers,
-                                  byte[] binaryData, Throwable error) {
-            }
-        });
-        return b;
     }
 }

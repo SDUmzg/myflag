@@ -105,7 +105,12 @@ public class MyFlagClockActivity extends BaseActivity {
     点击发送按钮
      */
     public void sendClock(View view) {
+        if(inputText.getText().toString().length() == 0){
+            Toast.makeText(MyFlagClockActivity.this, "打卡感想未输入", Toast.LENGTH_LONG).show();
+            return;
+        }
         if (!path.equals("")) {
+            dialog.show();
             isUpLoad = false;
             final AsyncHttpClient client = new AsyncHttpClient();
             File file = new File(path);
@@ -139,6 +144,7 @@ public class MyFlagClockActivity extends BaseActivity {
                             @Override
                             public void onSuccess(int statusCode, cz.msebera.android.httpclient.Header[] headers, byte[] responseBody) {
                                 Toast.makeText(MyFlagClockActivity.this, "打卡成功", Toast.LENGTH_SHORT).show();
+                                dialog.dismiss();
                                 MyFlagClockActivity.this.finish();
                             }
 
@@ -157,7 +163,7 @@ public class MyFlagClockActivity extends BaseActivity {
                 });
 
             } else {
-                Toast.makeText(MyFlagClockActivity.this, "文件不存在", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MyFlagClockActivity.this, "未选择图片", Toast.LENGTH_SHORT).show();
 
             }
         }

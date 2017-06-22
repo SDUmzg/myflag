@@ -3,13 +3,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center_vertical">
+    android:gravity="center_vertical"
+    android:background="@color/white"
+    android:padding="15dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="8dp"
         android:gravity="center_vertical">
 
         <ImageView
@@ -59,6 +60,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:maxHeight="200dp"
-        android:src="@drawable/create_flag_img"/>
+        android:src="@drawable/picture_default"
+        android:maxWidth="200dp"
+        android:maxHeight="400dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"/>
 </LinearLayout>

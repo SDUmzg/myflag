@@ -26,6 +26,7 @@ import okhttp3.Response;
 public class LoginActivity extends BaseActivity {
     private EditText accountEditText, passwordEditText;
     private String account, password;
+    private SharedPreferences preferences;
 
     @Override
     public int getLayoutId() {
@@ -35,16 +36,15 @@ public class LoginActivity extends BaseActivity {
     @Override
     public void afterCreate(Bundle savedInstanceState) {
         //获取各组件id
+        preferences = BaseApplication.getInstance().getSharedPreferences("User", Context.MODE_PRIVATE);
         accountEditText = (EditText) findViewById(R.id.loginAccountEditText);
         passwordEditText = (EditText) findViewById(R.id.loginPasswordEditText);
 
-        SharedPreferences preferences = BaseApplication.getInstance().getSharedPreferences("User", Context.MODE_PRIVATE);
+        account = preferences.getString("account", null);
+        password = preferences.getString("password", null);
 
-        account = preferences.getString("account",null);
-        password = preferences.getString("password",null);
-
-        if(account!=null && password!=null)
-            login(null);
+        if (account != null && password != null)
+            doLogin();
     }
 
     public void goToRegister(View v) {
@@ -52,6 +52,7 @@ public class LoginActivity extends BaseActivity {
     }
 
     public void login(View v) {
+        dialog.show();
         if (getText()) {
             ArrayList<NetUtil.Param> params = new ArrayList<>();
             params.add(new NetUtil.Param("phone", account));
@@ -63,6 +64,20 @@ public class LoginActivity extends BaseActivity {
             } catch (IOException e) {
                 e.printStackTrace();
             }
+        }
+    }
+
+    private void doLogin() {
+        dialog.show();
+        ArrayList<NetUtil.Param> params = new ArrayList<>();
+        params.add(new NetUtil.Param("phone", account));
+        params.add(new NetUtil.Param("password", password));
+
+        LoginResult loginResult = new LoginResult();
+        try {
+            NetUtil.getResult(NetUtil.loginUrl, params, loginResult);
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 
@@ -112,7 +127,6 @@ public class LoginActivity extends BaseActivity {
                         });
                     } else {
                         JSONObject userJson = new JSONObject(user);
-                        SharedPreferences preferences = BaseApplication.getInstance().getSharedPreferences("User", Context.MODE_PRIVATE);
                         SharedPreferences.Editor editor = preferences.edit();
                         editor.putString("uid", userJson.optInt("uid") + "").apply();
                         editor.putString("phone", userJson.optString("phone")).apply();
@@ -123,7 +137,7 @@ public class LoginActivity extends BaseActivity {
                         editor.putString("password", password).apply();
                         editor.putString("sex", userJson.optString("sex")).apply();
                         editor.putInt("photo", userJson.optInt("photo")).apply();
-
+                        dialog.dismiss();
                         LoginActivity.this.runOnUiThread(new Runnable() {
                             @Override
                             public void run() {

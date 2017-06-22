@@ -5,6 +5,7 @@ package com.example.sdu.myflag.util;
  */
 
 import android.app.Activity;
+import android.app.Dialog;
 import android.content.ComponentName;
 import android.content.ContentUris;
 import android.content.Context;
@@ -28,7 +29,13 @@ import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
+import android.widget.ImageView;
 import android.widget.Toast;
+
+import com.android.volley.toolbox.ImageLoader;
+import com.bumptech.glide.Glide;
+import com.example.sdu.myflag.R;
+import com.example.sdu.myflag.base.BaseApplication;
 
 import java.io.UnsupportedEncodingException;
 import java.text.SimpleDateFormat;
@@ -476,5 +483,33 @@ public class BaseTools {
         String time = Long.toString(t);
         return time.substring(time.length() - 10);
     }
+
+    /*
+    volley加载图片
+     */
+    public static void loadBitmap(String imgPath, final ImageView imageView) {
+        ImageLoader imageLoader = new ImageLoader(BaseApplication.getQueues(), BaseApplication.bitmapCache);
+        ImageLoader.ImageListener imageListener = imageLoader.getImageListener(imageView,
+                R.drawable.picture_default, R.drawable.picture_default);
+        imageLoader.get(imgPath, imageListener);
+    }
+
+    /*
+    显示加载条
+     */
+    public static Dialog showLoadingDialog(Context context){
+        Dialog dialog = new Dialog(context, R.style.progress_dialog);
+        dialog.setContentView(R.layout.item_loading_image);
+        dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
+        ImageView imageView = (ImageView) dialog.findViewById(R.id.loading_image);
+        Glide.with(context).load(R.drawable.loading_image).into(imageView);
+        //Glide.with(context).load(R.drawable.loading_dialog).into(imageView);
+        return dialog;
+    }
+
+    /*
+    关闭加载条
+     */
+
 }
 
