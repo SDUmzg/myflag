@@ -61,7 +61,7 @@
             android:layout_width="44dp"
             android:layout_height="32dp"
             app:srcCompat="@drawable/nickname"
-            android:id="@+id/imageView"
+            android:id="@+id/nicknameView"
             android:layout_gravity="center" />
 
         <TextView
@@ -99,7 +99,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/sex"
-            android:id="@+id/imageView2"
+            android:id="@+id/sexView"
             android:layout_weight="0.12" />
 
         <TextView
@@ -150,7 +150,7 @@
             android:layout_width="32dp"
             android:layout_height="32dp"
             app:srcCompat="@drawable/signal"
-            android:id="@+id/imageView3"
+            android:id="@+id/signalView"
             android:layout_weight="0.12" />
 
         <TextView
