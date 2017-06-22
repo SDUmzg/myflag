@@ -63,7 +63,7 @@
             android:paddingLeft="20dp"
             android:text="昵称"
             android:textColor="@color/black"
-            android:textSize="17sp" />
+            android:textSize="16sp" />
 
         <EditText
             android:id="@+id/nick_name_edt"
@@ -75,7 +75,7 @@
             android:paddingLeft="10dp"
             android:text="陌年之夏"
             android:textColor="@color/text_dark_gray"
-            android:textSize="17sp" />
+            android:textSize="16sp" />
 
     </LinearLayout>
 
@@ -94,7 +94,7 @@
             android:paddingLeft="20dp"
             android:text="性别"
             android:textColor="@color/black"
-            android:textSize="17sp" />
+            android:textSize="16sp" />
 
         <carbon.widget.RadioGroup
             android:id="@+id/sex_radio_group"
@@ -138,7 +138,7 @@
             android:paddingLeft="20dp"
             android:text="个性签名"
             android:textColor="@color/black"
-            android:textSize="17sp" />
+            android:textSize="16sp" />
 
         <EditText
             android:id="@+id/signature_edt"
@@ -151,7 +151,7 @@
             android:paddingLeft="10dp"
             android:textColor="@color/text_dark_gray"
             android:textColorHint="@color/text_hint_gray"
-            android:textSize="17sp" />
+            android:textSize="16sp" />
 
     </LinearLayout>
 

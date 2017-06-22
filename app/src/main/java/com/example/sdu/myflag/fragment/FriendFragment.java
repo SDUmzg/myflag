@@ -1,17 +1,20 @@
 package com.example.sdu.myflag.fragment;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
 import com.example.sdu.myflag.R;
+import com.example.sdu.myflag.activity.FriendFlagActivity;
 import com.example.sdu.myflag.adapter.FriendListAdapter;
 import com.example.sdu.myflag.base.BaseApplication;
 import com.example.sdu.myflag.base.BaseFragment;
@@ -35,6 +38,7 @@ public class FriendFragment extends BaseFragment {
 
     private ListView listView;
     private FriendListAdapter friendListAdapter;
+    ArrayList<FriendBean> list;
 
     public FriendFragment() {
         // Required empty public constructor
@@ -44,15 +48,27 @@ public class FriendFragment extends BaseFragment {
         return R.layout.fragment_friend;
     }
 
-    protected void init()
-    {
+    protected void init() {
         listView = (ListView) mRootView.findViewById(R.id.friendListView);
+        list = new ArrayList<>();
     }
 
     @Override
     public void afterCreate(Bundle savedInstanceState) {
-
         getData();
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(FriendFragment.this.getActivity(), FriendFlagActivity.class);
+                FriendBean bean = list.get(position);
+
+                intent.putExtra("uid", bean.getId());
+                intent.putExtra("headIndex", bean.getIconId());
+                intent.putExtra("nickname", bean.getName());
+
+                FriendFragment.this.startActivity(intent);
+            }
+        });
     }
 
     private void getData() {
@@ -92,7 +108,6 @@ public class FriendFragment extends BaseFragment {
                                 JSONObject friend = new JSONObject(res);
                                 jsonArray = friend.getJSONArray("friend");
 
-                                ArrayList<FriendBean> list = new ArrayList<>();
                                 CharacterParser characterParser = new CharacterParser();
                                 for (int i = 0; i < jsonArray.length(); i++) {
                                     JSONObject jsonObject = jsonArray.getJSONObject(i);

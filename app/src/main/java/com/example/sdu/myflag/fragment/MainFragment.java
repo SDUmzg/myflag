@@ -127,16 +127,11 @@ public class MainFragment extends BaseFragment {
             return;
         }
 
-        Date date = new Date();
-        long t = date.getTime() / 1000;
-        String time = Long.toString(t);
-        time = time.substring(time.length() - 10);
-
         GetFlagResult getFlagResult = new GetFlagResult();
 
         List<NetUtil.Param> params = new LinkedList<>();
         params.add(new NetUtil.Param("id", myId));
-        params.add(new NetUtil.Param("time", time));
+        params.add(new NetUtil.Param("time", BaseTools.getParamTime()));
 
         try {
             NetUtil.getResult(NetUtil.getMyFlagUrl, params, getFlagResult);

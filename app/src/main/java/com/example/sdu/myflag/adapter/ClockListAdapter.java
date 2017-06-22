@@ -56,20 +56,34 @@ public class ClockListAdapter extends BaseAdapter {
 
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
-        convertView = LayoutInflater.from(context).inflate(R.layout.item_clock_list, null);
-        TextView nicknameTv = (TextView) convertView.findViewById(R.id.clock_nickname);
-        TextView contentTv = (TextView) convertView.findViewById(R.id.clock_content);
-        TextView timeTv = (TextView) convertView.findViewById(R.id.clock_time);
-        ImageView icon = (ImageView) convertView.findViewById(R.id.clock_icon);
-        ImageView picture = (ImageView) convertView.findViewById(R.id.clock_picture);
+        MyViewHolder myViewHolder;
+        if(convertView == null){
+            myViewHolder = new MyViewHolder();
+            convertView = LayoutInflater.from(context).inflate(R.layout.item_clock_list, null);
+            myViewHolder.nicknameTv = (TextView) convertView.findViewById(R.id.clock_nickname);
+            myViewHolder.contentTv = (TextView) convertView.findViewById(R.id.clock_content);
+            myViewHolder.timeTv = (TextView) convertView.findViewById(R.id.clock_time);
+            myViewHolder.icon = (ImageView) convertView.findViewById(R.id.clock_icon);
+            myViewHolder.picture = (ImageView) convertView.findViewById(R.id.clock_picture);
 
-        icon.setImageDrawable(context.getResources().getDrawable(BaseApplication.HeadIcon[clockList.get(position).iconId]));
-        BaseTools.loadBitmap(NetUtil.getImageUrl + clockList.get(position).photo, picture);
-        //picture.setImageBitmap(getImage(clockList.get(position).photo));
-
-        nicknameTv.setText(clockList.get(position).nickname);
-        contentTv.setText(clockList.get(position).content);
-        timeTv.setText(clockList.get(position).time);
+            convertView.setTag(myViewHolder);
+        }
+        else {
+            myViewHolder = (MyViewHolder) convertView.getTag();
+        }
+        myViewHolder.icon.setImageDrawable(context.getResources().getDrawable(BaseApplication.HeadIcon[clockList.get(position).iconId]));
+        BaseTools.loadBitmap(NetUtil.getImageUrl + clockList.get(position).photo, myViewHolder.picture);
+        myViewHolder.nicknameTv.setText(clockList.get(position).nickname);
+        myViewHolder.contentTv.setText(clockList.get(position).content);
+        myViewHolder.timeTv.setText(clockList.get(position).time);
         return convertView;
+    }
+
+    class MyViewHolder {
+        public TextView nicknameTv;
+        public TextView contentTv;
+        public TextView timeTv;
+        public ImageView icon;
+        public ImageView picture;
     }
 }

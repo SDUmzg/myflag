@@ -49,6 +49,7 @@
         <activity android:name=".activity.MyFlagClockActivity"/>
         <activity android:name=".activity.MyFlagDetailActivity"/>
         <activity android:name=".activity.SuggestionActivity"/>
+        <activity android:name=".activity.FriendFlagActivity"/>
     </application>
 
 </manifest>
