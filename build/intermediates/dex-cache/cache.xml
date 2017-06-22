@@ -3,12 +3,48 @@
 
     <item
         is-multidex="false"
+        jar="F:\myflag\myflag\app\build\intermediates\exploded-aar\pl.droidsonroids.gif\android-gif-drawable\1.1.17\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="7f8c6fd043a9c060badf3fa9b77e51c422af0a8b">
+        <dex dex="F:\myflag\myflag\app\build\intermediates\pre-dexed\debug\pl.droidsonroids.gif-android-gif-drawable-1.1.17_6091d1ce4e1d0b87cf2530415d0f1ce7140766a4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\myflag\myflag\app\build\intermediates\exploded-aar\com.android.support\gridlayout-v7\23.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="003ebdacd5f75067b8724f92bd5eefa323d870aa">
+        <dex dex="F:\myflag\myflag\app\build\intermediates\pre-dexed\debug\com.android.support-gridlayout-v7-23.3.0_2584df7d74b6ef18b0038eda4162d52560fb5262.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\cz.msebera.android\httpclient\4.3.6\526a9f794eab830eae4f23a62c572878b3f491ab\httpclient-4.3.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="526a9f794eab830eae4f23a62c572878b3f491ab">
+        <dex dex="F:\myflag\myflag\app\build\intermediates\pre-dexed\debug\httpclient-4.3.6_8bf35ee2bba818564cbd6641d936c584519fade0.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\de.greenrobot\androidsvg\1.2.2-beta-1-tweaked-2\8f38bd2ecc13b4950bfa2aea1b813dd1c6b507b2\androidsvg-1.2.2-beta-1-tweaked-2.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.3"
         sha1="8f38bd2ecc13b4950bfa2aea1b813dd1c6b507b2">
         <dex dex="F:\myflag\myflag\app\build\intermediates\pre-dexed\debug\androidsvg-1.2.2-beta-1-tweaked-2_2f0510530bec18a1791fc31da82aed9c4d3e34b3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\myflag\myflag\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="F:\myflag\myflag\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.4.0_4cb94cb5c373b8958f6e96292f5fa85cb798c7c9.jar" />
     </item>
     <item
         is-multidex="false"
@@ -21,12 +57,39 @@
     </item>
     <item
         is-multidex="false"
+        jar="F:\myflag\myflag\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="F:\myflag\myflag\app\build\intermediates\pre-dexed\debug\internal_impl-23.4.0_bd3b639b346111a7306d0a60ce0d4b88fb1f8b52.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.2.0\f7873a2ebde246a45c2a8d6f3247108b4c88a879\okhttp-3.2.0.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.3"
         sha1="f7873a2ebde246a45c2a8d6f3247108b4c88a879">
         <dex dex="F:\myflag\myflag\app\build\intermediates\pre-dexed\debug\okhttp-3.2.0_e97c4d684058659f4c78fd063d89ce0d8b400297.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.6.0\98476622f10715998eacf9240d6b479f12c66143\okio-1.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="F:\myflag\myflag\app\build\intermediates\pre-dexed\debug\okio-1.6.0_c410569bd3ae660f2a7eceb3af69efc833b46b70.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.loopj.android\android-async-http\1.4.9\386a4339ffe52d5d63e80f9bed8d2b1d1a418249\android-async-http-1.4.9.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="386a4339ffe52d5d63e80f9bed8d2b1d1a418249">
+        <dex dex="F:\myflag\myflag\app\build\intermediates\pre-dexed\debug\android-async-http-1.4.9_84d4bd66f8cad624bcdcc86f55ed20f5517877c2.jar" />
     </item>
     <item
         is-multidex="false"
@@ -66,69 +129,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="F:\myflag\myflag\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.3"
-        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
-        <dex dex="F:\myflag\myflag\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.4.0_94c0e66d64e8089ad1c71af47855a026f142e832.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="F:\myflag\myflag\app\build\intermediates\exploded-aar\tk.zielony\carbon\0.13.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.3"
-        sha1="bd6449b5a2518f915391c5cb061403fb5b1e784e">
-        <dex dex="F:\myflag\myflag\app\build\intermediates\pre-dexed\debug\tk.zielony-carbon-0.13.0_f4f6fb73aaa5ade4075e9d652b38a8646258bb71.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="F:\myflag\myflag\app\build\intermediates\exploded-aar\pl.droidsonroids.gif\android-gif-drawable\1.1.17\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.3"
-        sha1="7f8c6fd043a9c060badf3fa9b77e51c422af0a8b">
-        <dex dex="F:\myflag\myflag\app\build\intermediates\pre-dexed\debug\pl.droidsonroids.gif-android-gif-drawable-1.1.17_6091d1ce4e1d0b87cf2530415d0f1ce7140766a4.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="F:\myflag\myflag\app\build\intermediates\exploded-aar\com.android.support\gridlayout-v7\23.3.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.3"
-        sha1="003ebdacd5f75067b8724f92bd5eefa323d870aa">
-        <dex dex="F:\myflag\myflag\app\build\intermediates\pre-dexed\debug\com.android.support-gridlayout-v7-23.3.0_2584df7d74b6ef18b0038eda4162d52560fb5262.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="F:\myflag\myflag\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.3"
-        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
-        <dex dex="F:\myflag\myflag\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.4.0_4cb94cb5c373b8958f6e96292f5fa85cb798c7c9.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="F:\myflag\myflag\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.3"
-        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
-        <dex dex="F:\myflag\myflag\app\build\intermediates\pre-dexed\debug\internal_impl-23.4.0_bd3b639b346111a7306d0a60ce0d4b88fb1f8b52.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.6.0\98476622f10715998eacf9240d6b479f12c66143\okio-1.6.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.3"
-        sha1="98476622f10715998eacf9240d6b479f12c66143">
-        <dex dex="F:\myflag\myflag\app\build\intermediates\pre-dexed\debug\okio-1.6.0_c410569bd3ae660f2a7eceb3af69efc833b46b70.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="F:\myflag\myflag\app\build\intermediates\exploded-aar\com.github.rahatarmanahmed\circularprogressview\2.5.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
@@ -156,12 +156,30 @@
     </item>
     <item
         is-multidex="false"
+        jar="F:\myflag\myflag\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="F:\myflag\myflag\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.4.0_94c0e66d64e8089ad1c71af47855a026f142e832.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.3"
         sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
         <dex dex="F:\myflag\myflag\app\build\intermediates\pre-dexed\debug\library-2.4.0_dd460f45d27a359687729c3c169358b1eda3100b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\myflag\myflag\app\build\intermediates\exploded-aar\tk.zielony\carbon\0.13.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="bd6449b5a2518f915391c5cb061403fb5b1e784e">
+        <dex dex="F:\myflag\myflag\app\build\intermediates\pre-dexed\debug\tk.zielony-carbon-0.13.0_f4f6fb73aaa5ade4075e9d652b38a8646258bb71.jar" />
     </item>
     <item
         is-multidex="false"

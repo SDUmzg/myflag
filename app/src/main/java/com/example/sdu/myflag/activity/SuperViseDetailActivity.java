@@ -129,7 +129,7 @@ public class SuperViseDetailActivity extends BaseActivity {
     }
 
     public void clockBtnAction(View view) {
-
+        startNewActivity(MyFlagClockActivity.class);
     }
 
     class ApplySuperviseUrlCallBack implements NetUtil.CallBackForResult {
