@@ -192,9 +192,9 @@ public class MainFragment extends BaseFragment {
                         String achieve = js.optString("achieve");
                         String fid = js.optString("fid");
                         String id = js.optString("id");
-                        String startTime = stampToDate(js.optString("startTime"));
+                        String startTime = BaseTools.stampToDate(js.optString("startTime"));
                         long end = js.optLong("endTime");
-                        String endTime = stampToDate(end + "");
+                        String endTime = BaseTools.stampToDate(end + "");
                         String createTime = js.optString("createTime");
                         String teamOrNot = js.optString("isTeam").equals("true") ? "[团队]" : "[个人]";
                         String isFinish = "false";
@@ -217,18 +217,6 @@ public class MainFragment extends BaseFragment {
                     e.printStackTrace();
                 }
             }
-        }
-
-        /*
-        * 将时间戳转换为时间
-        */
-        public String stampToDate(String s) {
-            String res;
-            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
-            long lt = Long.valueOf(s) * 1000;
-            Date date = new Date(lt);
-            res = simpleDateFormat.format(date);
-            return res;
         }
     }
 
