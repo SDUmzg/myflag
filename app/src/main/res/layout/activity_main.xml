@@ -31,7 +31,7 @@
             android:layout_margin="8dp"
             sat:satelliteDistance="100dp"
             sat:mainImage="@drawable/ic_launcher"
-            sat:totalSpacingDegree="90"
+            sat:totalSpacingDegree="120"
             sat:closeOnClick="true"
             sat:expandDuration="500"
             tools:layout_editor_absoluteX="0dp"

@@ -9,7 +9,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="?attr/actionBarSize"
         android:background="@color/white"
         android:orientation="horizontal"
         tools:layout_editor_absoluteX="0dp"
@@ -18,7 +18,7 @@
         <LinearLayout
             android:id="@+id/flag_friend_layout"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="?attr/actionBarSize"
             android:layout_weight="1"
             android:gravity="center"
             android:onClick="onMainTabClick"
@@ -30,15 +30,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:text="flag空间"
+                android:text="Flag"
                 android:textColor="@color/tab_text_color_gray"
-                android:textSize="18sp" />
+                android:textSize="20sp" />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/clock_tv_layout"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="?attr/actionBarSize"
             android:layout_weight="1"
             android:gravity="center"
             android:onClick="onCommunityTabClick"
@@ -50,9 +50,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:text="打卡空间"
+                android:text="打卡"
                 android:textColor="@color/tab_text_color_gray"
-                android:textSize="18sp" />
+                android:textSize="20sp" />
         </LinearLayout>
 
     </LinearLayout>

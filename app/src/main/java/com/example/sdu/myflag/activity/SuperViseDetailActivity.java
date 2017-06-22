@@ -15,10 +15,14 @@ import com.example.sdu.myflag.R;
 import com.example.sdu.myflag.base.BaseActivity;
 import com.example.sdu.myflag.base.BaseApplication;
 import com.example.sdu.myflag.bean.FlagBean;
+import com.example.sdu.myflag.util.BaseTools;
 import com.example.sdu.myflag.util.NetUtil;
+import com.example.sdu.myflag.wave.WaveView;
 
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 
 import okhttp3.Response;
 
@@ -35,6 +39,7 @@ public class SuperViseDetailActivity extends BaseActivity {
     FlagBean flagBean;
     String uid;
     ImageView msg_icon_img;
+    private WaveView waveView;
 
     @Override
     public int getLayoutId() {
@@ -46,6 +51,8 @@ public class SuperViseDetailActivity extends BaseActivity {
         SharedPreferences sharedPreferences = BaseApplication.getInstance().getSharedPreferences("User", Context.MODE_PRIVATE);
         uid = sharedPreferences.getString("uid", null);
 
+
+        waveView = (WaveView) findViewById(R.id.wave_view);
         supervise_detail_award_tv = (TextView) findViewById(R.id.supervise_detail_award_tv);
         supervise_detail_time_tv = (TextView) findViewById(R.id.supervise_detail_time_tv);
         supervise_member_tv = (TextView) findViewById(R.id.supervise_member_tv);
@@ -87,6 +94,12 @@ public class SuperViseDetailActivity extends BaseActivity {
         supervise_detail_nickName_tv.setText(flagBean.getUser_name());
         supervise_detail_award_tv.setText(flagBean.getReward());
         supervise_detail_time_tv.setText(flagBean.getTime_begin() + "  -  " + flagBean.getTime_end());
+
+        float betweenStartToEnd = BaseTools.daysBetween(flagBean.getTime_begin(), flagBean.getTime_end());
+        float betweenStartToCur = BaseTools.daysBetween(flagBean.getTime_begin(), new SimpleDateFormat("yyyy-MM-dd").format(new Date()));
+        int value = (int)(100 * (betweenStartToCur / betweenStartToEnd));
+        waveView.setProgress(value > 100 ? 100 : value); //这里的参数放置一个1-100的参数   参数=100*（currentTime-startTime）/(endTime-startTime)   修改波浪的波动程度去xml文件里面修改
+
         msg_icon_img.setImageDrawable(getResources().getDrawable(BaseApplication.HeadIcon[flagBean.getIconId()]));
 
         String member = "";

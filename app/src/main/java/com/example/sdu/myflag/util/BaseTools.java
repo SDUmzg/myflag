@@ -38,8 +38,11 @@ import com.example.sdu.myflag.R;
 import com.example.sdu.myflag.base.BaseApplication;
 
 import java.io.UnsupportedEncodingException;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
+import java.util.zip.Deflater;
 
 
 public class BaseTools {
@@ -226,13 +229,13 @@ public class BaseTools {
      * @param requestCode
      * @param cropImageFileName     图片剪裁成功后的缓存文件名称，如果不为空，则获取剪裁后的文件方式为：
      *                              <pre>String fileName = extras.getString("file-data");
-     *                                                           File file = this.getFileStreamPath(fileName);
-     *                                                           Uri uri = Uri.fromFile(file);</pre>
+     *                                                                                        File file = this.getFileStreamPath(fileName);
+     *                                                                                        Uri uri = Uri.fromFile(file);</pre>
      *                              如果为空，则获取剪裁后的图片方式为：
      *                              <pre>Bundle extras = data.getExtras();
-     *                                                           if (extras != null) {
-     *                                                           Bitmap photo = extras.getParcelable("data");
-     *                                                           }</pre>
+     *                                                                                        if (extras != null) {
+     *                                                                                        Bitmap photo = extras.getParcelable("data");
+     *                                                                                        }</pre>
      *                              使用的时候，建议按照文件路径（也就是传入有效的cropImageFileName）值使用，原因在于：intent在传递值的时候，对于bitmap这样的值有40kb的大小限制
      */
     public static void startCropImageActivityForResult(Activity context, Uri imageUri, boolean defaultSizeWithSource,
@@ -411,7 +414,7 @@ public class BaseTools {
                     contentUri = MediaStore.Audio.Media.EXTERNAL_CONTENT_URI;
                 }
                 String selection = MediaStore.Images.Media._ID + "=?";
-                String[] selectionArgs = new String[] { split[1] };
+                String[] selectionArgs = new String[]{split[1]};
                 return getDataColumn(context, contentUri, selection, selectionArgs);
             }
         } // MediaStore (and general)
@@ -431,7 +434,7 @@ public class BaseTools {
     public static String getDataColumn(Context context, Uri uri, String selection, String[] selectionArgs) {
         Cursor cursor = null;
         String column = MediaStore.Images.Media.DATA;
-        String[] projection = { column };
+        String[] projection = {column};
         try {
             cursor = context.getContentResolver().query(uri, projection, selection, selectionArgs, null);
             if (cursor != null && cursor.moveToFirst()) {
@@ -477,7 +480,7 @@ public class BaseTools {
         return "com.google.android.apps.photos.content".equals(uri.getAuthority());
     }
 
-    public static String getParamTime(){
+    public static String getParamTime() {
         Date date = new Date();
         long t = date.getTime() / 1000;
         String time = Long.toString(t);
@@ -497,7 +500,7 @@ public class BaseTools {
     /*
     显示加载条
      */
-    public static Dialog showLoadingDialog(Context context){
+    public static Dialog showLoadingDialog(Context context) {
         Dialog dialog = new Dialog(context, R.style.progress_dialog);
         dialog.setContentView(R.layout.item_loading_image);
         dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
@@ -507,9 +510,28 @@ public class BaseTools {
         return dialog;
     }
 
-    /*
-    关闭加载条
+    /**
+     * 计算两个日期之间相差的天数
+     *
      */
+    public static float daysBetween(String start, String end) {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        Date smdate = null;
+        Date bdate = null;
+        try {
+            smdate = sdf.parse(start);
+            bdate = sdf.parse(end);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(smdate);
+        long time1 = cal.getTimeInMillis();
+        cal.setTime(bdate);
+        long time2 = cal.getTimeInMillis();
+        long between_days = (time2 - time1) / (1000 * 3600 * 24);
 
+        return Float.parseFloat(String.valueOf(between_days));
+    }
 }
 

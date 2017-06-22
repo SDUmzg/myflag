@@ -30,7 +30,6 @@ public class MainActivity extends BaseActivity {
     ImageView main_img, community_img, friend_img, myself_img;
     TextView main_tv, community_tv, friend_tv, myself_tv;
 
-
     @Override
     public int getLayoutId() {
         return R.layout.activity_main;
@@ -63,27 +62,24 @@ public class MainActivity extends BaseActivity {
         List<SatelliteMenuItem> items = new ArrayList<SatelliteMenuItem>();
 
 
-        items.add(new SatelliteMenuItem(1, R.drawable.ic_1));
-        items.add(new SatelliteMenuItem(3, R.drawable.ic_3));
+        items.add(new SatelliteMenuItem(1, R.drawable.create_flag));
+        items.add(new SatelliteMenuItem(2, R.drawable.my_supervise));
         //items.add(new SatelliteMenuItem(4, R.drawable.ic_4));
         //items.add(new SatelliteMenuItem(3, R.drawable.ic_5));
         //items.add(new SatelliteMenuItem(2, R.drawable.ic_6));
-        items.add(new SatelliteMenuItem(2, R.drawable.ic_2));
+        items.add(new SatelliteMenuItem(3, R.drawable.search_friend));
 
         menu.addItems(items);
 
         menu.setOnItemClickedListener(new SatelliteMenu.SateliteClickedListener() {
             public void eventOccured(int id) {
-                Log.i("sat", "Clicked on " + id);
-                Intent intent = new Intent();
                 if (id == 1) {
-                    intent.setClass(MainActivity.this, CreateFlagActivity.class);
+                    startNewActivity(CreateFlagActivity.class);
                 } else if (id == 2) {
-                    intent.setClass(MainActivity.this, LookInfoActivity.class);
+                    startNewActivity(MySuperViseActivity.class);
                 } else {
-                    intent.setClass(MainActivity.this, SettingActivity.class);
+                    startNewActivity(SearchFriendActivity.class);
                 }
-                MainActivity.this.startActivity(intent);
             }
         });
 

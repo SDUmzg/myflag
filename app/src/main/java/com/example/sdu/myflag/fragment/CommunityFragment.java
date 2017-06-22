@@ -1,40 +1,17 @@
 package com.example.sdu.myflag.fragment;
 
-import android.content.Context;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.widget.SwipeRefreshLayout;
 import android.view.View;
 import android.widget.LinearLayout;
-import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.sdu.myflag.R;
-import com.example.sdu.myflag.adapter.FlagFriendListAdapter;
-import com.example.sdu.myflag.adapter.FlagListAdapter;
 import com.example.sdu.myflag.adapter.SampleViewPagerAdapter;
-import com.example.sdu.myflag.base.BaseApplication;
 import com.example.sdu.myflag.base.BaseFragment;
-import com.example.sdu.myflag.bean.FlagBean;
-import com.example.sdu.myflag.bean.SuperViseBriefBean;
-import com.example.sdu.myflag.util.BaseTools;
-import com.example.sdu.myflag.util.NetUtil;
 import com.example.sdu.myflag.widget.CustomViewPager;
 
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.io.IOException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
-import java.util.LinkedList;
-import java.util.List;
-
-import okhttp3.Response;
 
 /**
  * 社区界面
@@ -89,14 +66,14 @@ public class CommunityFragment extends BaseFragment {
     }
 
     private void setFriendFlagSelected() {
-        friendFlagTv.setTextColor(getResources().getColor(R.color.tab_text_color_blue));
+        friendFlagTv.setTextColor(getResources().getColor(R.color.tab_text_color_navigation));
         clockFlagTv.setTextColor(getResources().getColor(R.color.tab_text_color_gray));
         viewPager.setCurrentItem(0);
     }
 
     private void setClockSelected() {
         friendFlagTv.setTextColor(getResources().getColor(R.color.tab_text_color_gray));
-        clockFlagTv.setTextColor(getResources().getColor(R.color.tab_text_color_blue));
+        clockFlagTv.setTextColor(getResources().getColor(R.color.tab_text_color_navigation));
         viewPager.setCurrentItem(1);
     }
 }
