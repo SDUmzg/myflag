@@ -1,10 +1,5 @@
 package com.example.sdu.myflag.menupath;
-/**
- * Linearly distributes satellites in the given total degree.
- * 
- * @author Siyamed SINIR
- *
- */
+
 public class LinearDegreeProvider implements IDegreeProvider {
 	public float[] getDegrees(int count, float totalDegrees){
 		if(count < 1){

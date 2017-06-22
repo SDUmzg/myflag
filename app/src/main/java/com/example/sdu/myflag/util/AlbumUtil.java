@@ -1,7 +1,6 @@
 package com.example.sdu.myflag.util;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Environment;
@@ -11,9 +10,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-/**
- * Created by Administrator on 2017/6/22.
- */
+
 public class AlbumUtil {
 
     public final static String photo_path = getSDPath() + "/FindTeam";

@@ -22,14 +22,7 @@ import android.widget.TextView;
 import com.example.sdu.myflag.R;
 
 
-/**
- * Provides a "Path" like menu for android. ??
- * 
- * TODO: tell about usage
- * 
- * @author Siyamed SINIR
- * 
- */
+
 public class SatelliteMenu extends FrameLayout {
 
 	private static final int DEFAULT_SATELLITE_DISTANCE = 50;

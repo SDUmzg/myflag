@@ -1,12 +1,6 @@
 package com.example.sdu.myflag.menupath;
 
-/**
- * Provide the degree between each satellite as an array of degrees. Can be provided to 
- * {@link SatelliteMenu} as a parameter.  
- *  
- * @author Siyamed SINIR
- *
- */
+
 public class ArrayDegreeProvider implements IDegreeProvider {
 	private float[] degrees;
 	
