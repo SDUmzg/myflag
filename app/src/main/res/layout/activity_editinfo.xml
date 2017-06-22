@@ -58,8 +58,8 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="44dp"
-            android:layout_height="32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
             app:srcCompat="@drawable/nickname"
             android:id="@+id/nicknameView"
             android:layout_gravity="center" />
@@ -70,8 +70,7 @@
             android:gravity="center_vertical"
             android:text="昵称"
             android:textColor="@color/black"
-            android:textSize="16sp"
-            android:layout_weight="0.10" />
+            android:textSize="16sp" />
 
         <EditText
             android:id="@+id/nick_name_edt"
@@ -96,8 +95,8 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             app:srcCompat="@drawable/sex"
             android:id="@+id/sexView"
             android:layout_weight="0.12" />
@@ -147,8 +146,8 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="32dp"
-            android:layout_height="32dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             app:srcCompat="@drawable/signal"
             android:id="@+id/signalView"
             android:layout_weight="0.12" />
