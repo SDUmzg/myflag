@@ -135,6 +135,7 @@ public class MainFragment extends BaseFragment {
 
         try {
             NetUtil.getResult(NetUtil.getMyFlagUrl, params, getFlagResult);
+
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -202,8 +203,10 @@ public class MainFragment extends BaseFragment {
                     MainFragment.this.getActivity().runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
-                            listAdapter = new FlagListAdapter(MainFragment.this.getContext(), list);
+                            listAdapter = new FlagListAdapter(MainFragment.this.getActivity(), list);
                             listView.setAdapter(listAdapter);
+                            listAdapter.notifyDataSetChanged();
+                            listAdapter.notifyDataSetInvalidated();
                         }
                     });
                 } catch (JSONException e) {

@@ -3,6 +3,7 @@ package com.example.sdu.myflag.activity;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
+import android.view.View;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -70,6 +71,10 @@ public class MyMessageApplySuperviseActivity extends BaseActivity {
             e.printStackTrace();
         }
         return false;
+    }
+
+    public void myMessageApply(View view) {
+        this.finish();
     }
 
     class MyMessageCallBack implements NetUtil.CallBackForResult {

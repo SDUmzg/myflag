@@ -51,7 +51,6 @@ public class SuperViseDetailActivity extends BaseActivity {
         SharedPreferences sharedPreferences = BaseApplication.getInstance().getSharedPreferences("User", Context.MODE_PRIVATE);
         uid = sharedPreferences.getString("uid", null);
 
-
         waveView = (WaveView) findViewById(R.id.wave_view);
         supervise_detail_award_tv = (TextView) findViewById(R.id.supervise_detail_award_tv);
         supervise_detail_time_tv = (TextView) findViewById(R.id.supervise_detail_time_tv);
@@ -94,6 +93,10 @@ public class SuperViseDetailActivity extends BaseActivity {
         supervise_detail_nickName_tv.setText(flagBean.getUser_name());
         supervise_detail_award_tv.setText(flagBean.getReward());
         supervise_detail_time_tv.setText(flagBean.getTime_begin() + "  -  " + flagBean.getTime_end());
+        if(flagBean.getIsFinish().equals("true") && !flagBean.getAchieve().equals("2"))
+            waveView.setBackgroundColor(getResources().getColor(R.color.carbon_red_100));
+        else if(flagBean.getIsFinish().equals("true") && flagBean.getAchieve().equals("2"))
+            waveView.setBackgroundColor(getResources().getColor(R.color.carbon_green_100));
 
         float betweenStartToEnd = BaseTools.daysBetween(flagBean.getTime_begin(), flagBean.getTime_end());
         float betweenStartToCur = BaseTools.daysBetween(flagBean.getTime_begin(), new SimpleDateFormat("yyyy-MM-dd").format(new Date()));
