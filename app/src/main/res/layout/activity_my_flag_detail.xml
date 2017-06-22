@@ -6,12 +6,13 @@
 
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
@@ -49,7 +50,7 @@
                 wave:progress="80"
                 wave:wave_height="middle"
                 wave:wave_hz="normal"
-                wave:wave_length="middle" >
+                wave:wave_length="middle">
 
             </com.example.sdu.myflag.wave.WaveView>
 
@@ -58,13 +59,13 @@
                 android:layout_height="match_parent">
 
                 <ImageView
+                    android:id="@+id/msg_icon_img"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    wave:srcCompat="@drawable/head_icon_default"
-                    android:layout_marginTop="76dp"
-                    android:id="@+id/msg_icon_img"
                     android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true" />
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="76dp"
+                    wave:srcCompat="@drawable/head_icon_default" />
 
                 <RelativeLayout
                     android:id="@+id/nick_name_layout"
@@ -72,29 +73,29 @@
                     android:layout_height="match_parent">
 
                     <TextView
-                        android:text="nickname"
+                        android:id="@+id/supervise_detail_nickName_tv"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="163dp"
-                        android:id="@+id/supervise_detail_nickName_tv"
                         android:layout_alignParentTop="true"
-                        android:maxWidth="150dp"
                         android:layout_centerHorizontal="true"
+                        android:layout_marginTop="163dp"
+                        android:maxWidth="150dp"
+                        android:text="nickname"
                         android:textColor="@color/black"
-                        android:textSize="19sp"/>
+                        android:textSize="19sp" />
 
                     <EditText
+                        android:id="@+id/remark_edt"
                         android:layout_width="150dp"
                         android:layout_height="wrap_content"
-                        android:inputType="textMultiLine"
-                        android:ems="10"
-                        android:id="@+id/remark_edt"
                         android:layout_alignTop="@+id/supervise_detail_nickName_tv"
                         android:layout_centerHorizontal="true"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
                         android:maxWidth="150dp"
                         android:textColor="@color/black"
                         android:textSize="18sp"
-                        android:visibility="gone"/>
+                        android:visibility="gone" />
                 </RelativeLayout>
 
             </RelativeLayout>
@@ -104,28 +105,28 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:text="[团体]："
+                    android:id="@+id/isTeam_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
+                    android:layout_marginBottom="261dp"
                     android:layout_marginLeft="88dp"
                     android:layout_marginStart="88dp"
-                    android:layout_marginBottom="261dp"
+                    android:text="[团体]："
                     android:textColor="@color/black"
-                    android:textSize="15sp"
-                    android:id="@+id/isTeam_tv" />
+                    android:textSize="15sp" />
 
                 <TextView
+                    android:id="@+id/supervise_detail_flagName_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:id="@+id/supervise_detail_flagName_tv"
-                    android:layout_alignTop="@+id/isTeam_tv"
                     android:layout_alignBottom="@+id/isTeam_tv"
+                    android:layout_alignTop="@+id/isTeam_tv"
+                    android:layout_centerHorizontal="true"
                     android:textColor="@color/text_dark_gray"
-                    android:textSize="15sp"/>
+                    android:textSize="15sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -133,28 +134,27 @@
                 android:layout_height="match_parent">
 
                 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="230dp"
+                    android:layout_marginLeft="88dp"
+                    android:layout_marginStart="88dp"
                     android:text="时间："
                     android:textColor="@color/black"
-                    android:textSize="15sp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginLeft="88dp"
-                    android:layout_marginStart="88dp"
-                    android:layout_marginBottom="230dp"
-                     />
+                    android:textSize="15sp" />
 
                 <TextView
+                    android:id="@+id/supervise_detail_time_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
                     android:layout_marginBottom="230dp"
-                    android:id="@+id/supervise_detail_time_tv"
                     android:textColor="@color/text_dark_gray"
-                    android:textSize="15sp"/>
+                    android:textSize="15sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -162,29 +162,29 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:text="奖励设置："
-                    android:textColor="@color/black"
-                    android:textSize="15sp"
+                    android:id="@+id/textView10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
+                    android:layout_marginBottom="198dp"
                     android:layout_marginLeft="88dp"
                     android:layout_marginStart="88dp"
-                    android:layout_marginBottom="198dp"
-                    android:id="@+id/textView10" />
+                    android:text="奖励设置："
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
 
                 <TextView
+                    android:id="@+id/supervise_detail_award_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
+                    android:layout_alignTop="@+id/textView10"
                     android:layout_centerHorizontal="true"
                     android:layout_marginBottom="198dp"
-                    android:id="@+id/supervise_detail_award_tv"
-                    android:layout_alignTop="@+id/textView10"
                     android:textColor="@color/text_dark_gray"
-                    android:textSize="15sp"/>
+                    android:textSize="15sp" />
             </RelativeLayout>
 
 
