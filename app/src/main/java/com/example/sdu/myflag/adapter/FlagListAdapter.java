@@ -95,8 +95,7 @@ public class FlagListAdapter extends BaseAdapter {
                 waveView.setBackgroundColor(context.getResources().getColor(R.color.carbon_red_100));
             }
         }
-        //waveView.setProgress(50);
-        waveView.postInvalidate();
+        waveView.setProgress(100);
 
         return convertView;
     }
