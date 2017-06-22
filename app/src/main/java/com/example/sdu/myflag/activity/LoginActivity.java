@@ -37,6 +37,14 @@ public class LoginActivity extends BaseActivity {
         //获取各组件id
         accountEditText = (EditText) findViewById(R.id.loginAccountEditText);
         passwordEditText = (EditText) findViewById(R.id.loginPasswordEditText);
+
+        SharedPreferences preferences = BaseApplication.getInstance().getSharedPreferences("User", Context.MODE_PRIVATE);
+
+        account = preferences.getString("account",null);
+        password = preferences.getString("password",null);
+
+        if(account!=null && password!=null)
+            login(null);
     }
 
     public void goToRegister(View v) {
@@ -111,6 +119,7 @@ public class LoginActivity extends BaseActivity {
                         editor.putString("nickname", userJson.optString("nickname")).apply();
                         editor.putString("information", userJson.optString("information")).apply();
                         editor.putString("email", userJson.optString("email")).apply();
+                        editor.putString("account", account).apply();
                         editor.putString("password", password).apply();
                         editor.putString("sex", userJson.optString("sex")).apply();
                         editor.putInt("photo", userJson.optInt("photo")).apply();

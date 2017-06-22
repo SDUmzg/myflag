@@ -1,6 +1,10 @@
 package com.example.sdu.myflag.base;
 
+import android.Manifest;
+import android.annotation.SuppressLint;
 import android.app.Application;
+import android.content.pm.PackageManager;
+import android.util.Log;
 
 import com.example.sdu.myflag.R;
 
@@ -27,9 +31,11 @@ public class BaseApplication extends Application {
     public void onCreate() {
         super.onCreate();
         instance = this;
+
     }
 
     public static BaseApplication getInstance() {
         return instance;
     }
+
 }

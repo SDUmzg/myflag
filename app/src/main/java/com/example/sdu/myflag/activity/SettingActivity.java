@@ -34,6 +34,10 @@ public class SettingActivity extends BaseActivity {
         finish();
     }
 
+    public void suggestion(View view) {
+        startNewActivity(SuggestionActivity.class);
+    }
+
     public void settingBack(View view) {
         this.finish();
     }

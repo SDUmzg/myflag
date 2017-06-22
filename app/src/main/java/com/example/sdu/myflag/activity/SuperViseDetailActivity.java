@@ -129,7 +129,9 @@ public class SuperViseDetailActivity extends BaseActivity {
     }
 
     public void clockBtnAction(View view) {
-        startNewActivity(MyFlagClockActivity.class);
+        Intent intent = new Intent(SuperViseDetailActivity.this, MyFlagClockActivity.class);
+        intent.putExtra("fid", fid);
+        startActivity(intent);
     }
 
     class ApplySuperviseUrlCallBack implements NetUtil.CallBackForResult {

@@ -15,9 +15,7 @@ import com.example.sdu.myflag.bean.SuperViseBriefBean;
 
 import java.util.ArrayList;
 
-/**
- * Created by Administrator on 2016/9/23.
- */
+
 public class CommentListAdapter extends BaseAdapter {
 
     private ArrayList<SuperViseBriefBean> SuperViseBriefList;
