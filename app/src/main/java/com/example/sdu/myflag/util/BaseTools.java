@@ -358,5 +358,17 @@ public class BaseTools {
         else
             return true;
     }
+
+    /*
+* 将时间戳转换为时间
+*/
+    public static String stampToDate(String s) {
+        String res;
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        long lt = Long.valueOf(s) * 1000;
+        Date date = new Date(lt);
+        res = simpleDateFormat.format(date);
+        return res;
+    }
 }
 

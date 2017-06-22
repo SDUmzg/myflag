@@ -27,7 +27,7 @@ import okhttp3.Response;
  */
 public class SuperViseDetailActivity extends BaseActivity {
 
-    Button judge_btn, apply_supervise_btn;
+    Button judge_btn, apply_supervise_btn, clock_btn;
     TextView supervise_detail_award_tv, supervise_detail_time_tv, supervise_member_tv, supervise_detail_flagName_tv, supervise_detail_nickName_tv,
             isTeam_tv, supervise_ing_tv;
     String fid;
@@ -57,6 +57,7 @@ public class SuperViseDetailActivity extends BaseActivity {
         apply_supervise_btn = (Button) findViewById(R.id.apply_supervise_btn);
         supervise_ing_tv = (TextView) findViewById(R.id.supervise_ing_tv);
         msg_icon_img = (ImageView) findViewById(R.id.msg_icon_img);
+        clock_btn = (Button) findViewById(R.id.clock_btn);
 
         Intent intent = getIntent();
         flagBean = (FlagBean) intent.getExtras().get("bean");
@@ -66,20 +67,22 @@ public class SuperViseDetailActivity extends BaseActivity {
             {
                 judge_btn.setVisibility(View.GONE);
                 apply_supervise_btn.setVisibility(View.GONE);
-            } else {
+            } else {    // 正在监督且flag已完成
                 apply_supervise_btn.setVisibility(View.GONE);
                 supervise_ing_tv.setVisibility(View.GONE);
             }
-        } else if (code == 2) {
+        } else if (code == 2) { // 未监督状态
             judge_btn.setVisibility(View.GONE);
-            if (flagBean.getIsSupervise())
+            if (flagBean.getIsSupervise())  // 如果正在监督
                 apply_supervise_btn.setVisibility(View.GONE);
-            else
+            else    // 未监督
                 supervise_ing_tv.setVisibility(View.GONE);
-        } else {
+        } else {    // 我的flag
             judge_btn.setVisibility(View.GONE);
             apply_supervise_btn.setVisibility(View.GONE);
             supervise_ing_tv.setVisibility(View.GONE);
+            if(flagBean.getIsFinish().equals("false"))
+                clock_btn.setVisibility(View.VISIBLE);
         }
         supervise_detail_nickName_tv.setText(flagBean.getUser_name());
         supervise_detail_award_tv.setText(flagBean.getReward());
@@ -123,6 +126,10 @@ public class SuperViseDetailActivity extends BaseActivity {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public void clockBtnAction(View view) {
+        startNewActivity(MyFlagClockActivity.class);
     }
 
     class ApplySuperviseUrlCallBack implements NetUtil.CallBackForResult {
