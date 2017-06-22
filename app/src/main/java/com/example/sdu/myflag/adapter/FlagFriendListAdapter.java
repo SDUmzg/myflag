@@ -57,7 +57,6 @@ public class FlagFriendListAdapter extends BaseAdapter {
             viewHolder.time = (TextView) convertView.findViewById(R.id.time_tv);
             viewHolder.watch = (TextView) convertView.findViewById(R.id.watch_tv);
             viewHolder.teamOrNot = (TextView) convertView.findViewById(R.id.team_ornot_tv);
-            viewHolder.flag_finish_img = (ImageView) convertView.findViewById(R.id.flag_finish_img);
             viewHolder.icon = (ImageView) convertView.findViewById(R.id.head_icon);
 
             convertView.setTag(viewHolder);
@@ -80,7 +79,7 @@ public class FlagFriendListAdapter extends BaseAdapter {
         viewHolder.nickname.setText(mList.get(position).getUser_name());
         viewHolder.icon.setImageDrawable(context.getResources().getDrawable(BaseApplication.HeadIcon[mList.get(position).getIconId()]));
 
-        if (mList.get(position).getIsFinish().equals("true")) {
+/*        if (mList.get(position).getIsFinish().equals("true")) {
             viewHolder.flag_finish_img.setVisibility(View.VISIBLE);
             if (mList.get(position).getAchieve().equals("2"))
                 viewHolder.flag_finish_img.setImageResource(R.drawable.flag_finish_img);
@@ -88,7 +87,7 @@ public class FlagFriendListAdapter extends BaseAdapter {
                 viewHolder.flag_finish_img.setImageResource(R.drawable.flag_end_img);
         } else {
             viewHolder.flag_finish_img.setVisibility(View.GONE);
-        }
+        }*/
 
         convertView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -113,7 +112,6 @@ public class FlagFriendListAdapter extends BaseAdapter {
         public TextView watch;
         public TextView reward;
         public TextView teamOrNot;
-        public ImageView flag_finish_img;
         public ImageView icon;
     }
 }

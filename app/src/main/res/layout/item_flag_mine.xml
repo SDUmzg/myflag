@@ -29,7 +29,7 @@
                 android:gravity="center"
                 android:orientation="vertical">
 
-                <com.example.sdu.myflag.wave.WaveView
+                <com.john.waveview.WaveView
                     android:id="@+id/wave_view"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -145,14 +145,4 @@
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
-
-    <ImageView
-        android:id="@+id/flag_finish_img"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_alignParentRight="true"
-        android:layout_centerVertical="true"
-        android:layout_marginRight="10dp"
-        android:src="@drawable/flag_finish_img"
-        android:visibility="gone"/>
 </RelativeLayout>

@@ -17,7 +17,7 @@ import com.example.sdu.myflag.base.BaseApplication;
 import com.example.sdu.myflag.bean.FlagBean;
 import com.example.sdu.myflag.util.BaseTools;
 import com.example.sdu.myflag.util.NetUtil;
-import com.example.sdu.myflag.wave.WaveView;
+import com.john.waveview.WaveView;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;

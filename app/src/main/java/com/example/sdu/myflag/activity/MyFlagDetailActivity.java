@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 import com.example.sdu.myflag.R;
-import com.example.sdu.myflag.wave.WaveView;
+import com.john.waveview.WaveView;
 
 public class MyFlagDetailActivity extends AppCompatActivity {
     private WaveView waveView;

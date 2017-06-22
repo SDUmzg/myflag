@@ -22,7 +22,7 @@ import com.example.sdu.myflag.activity.SuperViseDetailActivity;
 import com.example.sdu.myflag.bean.FlagBean;
 import com.example.sdu.myflag.fragment.MainFragment;
 import com.example.sdu.myflag.util.BaseTools;
-import com.example.sdu.myflag.wave.WaveView;
+import com.john.waveview.WaveView;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -69,7 +69,6 @@ public class FlagListAdapter extends BaseAdapter {
         TextView time = (TextView) convertView.findViewById(R.id.time_tv);
         TextView watch = (TextView) convertView.findViewById(R.id.watch_tv);
         TextView teamOrNot = (TextView) convertView.findViewById(R.id.team_ornot_tv);
-        ImageView flag_finish_img = (ImageView) convertView.findViewById(R.id.flag_finish_img);
         WaveView waveView = (WaveView) convertView.findViewById(R.id.wave_view);
 
        // float betweenStartToEnd = BaseTools.daysBetween(mList.get(position).getTime_begin(), mList.get(position).getTime_end());
@@ -90,18 +89,14 @@ public class FlagListAdapter extends BaseAdapter {
         reward.setText(mList.get(position).getReward());
         teamOrNot.setText(mList.get(position).getTeamOrNot());
         if (mList.get(position).getIsFinish().equals("true")) {
-            flag_finish_img.setVisibility(View.VISIBLE);
             if (mList.get(position).getAchieve().equals("2")) {
-                flag_finish_img.setImageResource(R.drawable.flag_finish_img);
                 waveView.setBackgroundColor(context.getResources().getColor(R.color.carbon_green_100));
             } else {
-                flag_finish_img.setImageResource(R.drawable.flag_end_img);
                 waveView.setBackgroundColor(context.getResources().getColor(R.color.carbon_red_100));
             }
-        } else {
-            flag_finish_img.setVisibility(View.GONE);
         }
         //waveView.setProgress(50);
+        waveView.postInvalidate();
 
         return convertView;
     }

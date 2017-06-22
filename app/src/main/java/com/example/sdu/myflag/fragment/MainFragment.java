@@ -207,6 +207,7 @@ public class MainFragment extends BaseFragment {
                             listView.setAdapter(listAdapter);
                             listAdapter.notifyDataSetChanged();
                             listAdapter.notifyDataSetInvalidated();
+
                         }
                     });
                 } catch (JSONException e) {
