@@ -53,6 +53,7 @@ public class NetUtil {
     public static final String getClockUrl = "http://119.29.236.181/myflag/clock/FriendsClock";
     public static final String getImageUrl = "http://119.29.236.181/myflag/Images/ClockImage/";
     public static final String suggestionUrl = "http://119.29.236.181/myflag/util/uploadAdvise";
+    public static final String getUserClockUrl = "http://119.29.236.181/myflag/clock/userClock";
 
     private NetUtil() {
         mOkHttpClient = new OkHttpClient();

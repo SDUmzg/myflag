@@ -72,7 +72,7 @@ public class ClockFragment extends BaseFragment {
 
         List<NetUtil.Param> params = new LinkedList<>();
         String time = BaseTools.getParamTime();
-        params.add(new NetUtil.Param("uid", "28"));
+        params.add(new NetUtil.Param("uid", uid));
        // params.add(new NetUtil.Param("time", time));
 
         try {

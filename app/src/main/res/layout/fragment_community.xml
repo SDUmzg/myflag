@@ -32,7 +32,27 @@
                 android:layout_marginTop="4dp"
                 android:text="Flag"
                 android:textColor="@color/tab_text_color_gray"
-                android:textSize="20sp" />
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/my_clock_tv_layout"
+            android:layout_width="0dp"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onCommunityTabClick"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/my_clock_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="我的打卡"
+                android:textColor="@color/tab_text_color_gray"
+                android:textSize="17sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -50,9 +70,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:text="打卡"
+                android:text="好友打卡"
                 android:textColor="@color/tab_text_color_gray"
-                android:textSize="20sp" />
+                android:textSize="17sp" />
         </LinearLayout>
 
     </LinearLayout>

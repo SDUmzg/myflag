@@ -94,7 +94,7 @@ public class MainActivity extends BaseActivity {
         fragmentList.add(new MyFragment());
         sampleViewPagerAdapter = new SampleViewPagerAdapter(this.getSupportFragmentManager(), fragmentList);
         viewPager.setAdapter(sampleViewPagerAdapter);
-        viewPager.setOffscreenPageLimit(4);
+        viewPager.setOffscreenPageLimit(6);
         viewPager.setCurrentItem(0);
         setSelected(viewPager.getCurrentItem());
     }

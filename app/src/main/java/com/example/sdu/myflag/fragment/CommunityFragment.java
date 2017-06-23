@@ -20,8 +20,8 @@ public class CommunityFragment extends BaseFragment {
 
     ArrayList<Fragment> list;
     String id;
-    LinearLayout friendFlagLayout, clockLayout;
-    TextView friendFlagTv, clockFlagTv;
+    LinearLayout friendFlagLayout, myclockLayout, clockLayout;
+    TextView friendFlagTv, clockTv, myclockTv;
     CustomViewPager viewPager;
 
     @Override
@@ -44,18 +44,30 @@ public class CommunityFragment extends BaseFragment {
                 setClockSelected();
             }
         });
+
+        myclockLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setMyClockSelected();
+            }
+        });
     }
 
     @Override
     protected void init() {
         list = new ArrayList<>();
         friendFlagLayout = (LinearLayout) mRootView.findViewById(R.id.flag_friend_layout);
+        myclockLayout = (LinearLayout) mRootView.findViewById(R.id.my_clock_tv_layout);
         clockLayout = (LinearLayout) mRootView.findViewById(R.id.clock_tv_layout);
+
         friendFlagTv = (TextView) mRootView.findViewById(R.id.flag_friend_tv);
-        clockFlagTv = (TextView) mRootView.findViewById(R.id.clock_tv);
+        clockTv = (TextView) mRootView.findViewById(R.id.clock_tv);
+        myclockTv = (TextView) mRootView.findViewById(R.id.my_clock_tv);
+
         viewPager = (CustomViewPager) mRootView.findViewById(R.id.community_view_pager);
 
         list.add(new FriendFlagFragment());
+        list.add(new MyClockFragment());
         list.add(new ClockFragment());
 
         SampleViewPagerAdapter adapter = new SampleViewPagerAdapter(this.getActivity().getSupportFragmentManager(), list);
@@ -67,13 +79,22 @@ public class CommunityFragment extends BaseFragment {
 
     private void setFriendFlagSelected() {
         friendFlagTv.setTextColor(getResources().getColor(R.color.tab_text_color_navigation));
-        clockFlagTv.setTextColor(getResources().getColor(R.color.tab_text_color_gray));
+        myclockTv.setTextColor(getResources().getColor(R.color.tab_text_color_gray));
+        clockTv.setTextColor(getResources().getColor(R.color.tab_text_color_gray));
         viewPager.setCurrentItem(0);
     }
 
-    private void setClockSelected() {
+    private void setMyClockSelected() {
+        myclockTv.setTextColor(getResources().getColor(R.color.tab_text_color_navigation));
+        clockTv.setTextColor(getResources().getColor(R.color.tab_text_color_gray));
         friendFlagTv.setTextColor(getResources().getColor(R.color.tab_text_color_gray));
-        clockFlagTv.setTextColor(getResources().getColor(R.color.tab_text_color_navigation));
         viewPager.setCurrentItem(1);
+    }
+
+    private void setClockSelected() {
+        clockTv.setTextColor(getResources().getColor(R.color.tab_text_color_navigation));
+        myclockTv.setTextColor(getResources().getColor(R.color.tab_text_color_gray));
+        friendFlagTv.setTextColor(getResources().getColor(R.color.tab_text_color_gray));
+        viewPager.setCurrentItem(2);
     }
 }

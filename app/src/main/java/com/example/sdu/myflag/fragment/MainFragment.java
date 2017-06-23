@@ -101,11 +101,11 @@ public class MainFragment extends BaseFragment {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                   // Intent intent = new Intent(MainFragment.this.getActivity(), MyFlagDetailActivity.class);
-                    Intent intent = new Intent(MainFragment.this.getActivity(), SuperViseDetailActivity.class);
-                    intent.putExtra("bean", list.get(position));
-                    intent.putExtra("code", 3);
-                    MainFragment.this.getActivity().startActivity(intent);
+                // Intent intent = new Intent(MainFragment.this.getActivity(), MyFlagDetailActivity.class);
+                Intent intent = new Intent(MainFragment.this.getActivity(), SuperViseDetailActivity.class);
+                intent.putExtra("bean", list.get(position));
+                intent.putExtra("code", 3);
+                MainFragment.this.getActivity().startActivity(intent);
             }
         });
 
@@ -331,5 +331,4 @@ public class MainFragment extends BaseFragment {
         }
     }
 }
-
 
